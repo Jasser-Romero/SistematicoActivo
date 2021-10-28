@@ -28,13 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.rtbImprimir = new System.Windows.Forms.RichTextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // rtbImprimir
+            // 
+            this.rtbImprimir.Location = new System.Drawing.Point(38, 36);
+            this.rtbImprimir.Name = "rtbImprimir";
+            this.rtbImprimir.ReadOnly = true;
+            this.rtbImprimir.Size = new System.Drawing.Size(701, 329);
+            this.rtbImprimir.TabIndex = 0;
+            this.rtbImprimir.Text = "";
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(642, 389);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(97, 34);
+            this.btnAgregar.TabIndex = 1;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // FrmGestionActivos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.rtbImprimir);
+            this.Name = "FrmGestionActivos";
+            this.Text = "Gestion";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.RichTextBox rtbImprimir;
+        private System.Windows.Forms.Button btnAgregar;
     }
 }
 
